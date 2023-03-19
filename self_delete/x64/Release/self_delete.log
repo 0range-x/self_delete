@@ -1,0 +1,30 @@
+﻿  delete.c
+  delete.cpp
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(20,16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“TCHAR *”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(20,16): message : 请考虑在格式字符串中使用“%ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(20,16): message : 请考虑在格式字符串中使用“%lls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(20,16): message : 请考虑在格式字符串中使用“%Ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(20,16): message : 请考虑在格式字符串中使用“%ws”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(42,16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“TCHAR *”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(42,16): message : 请考虑在格式字符串中使用“%ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(42,16): message : 请考虑在格式字符串中使用“%lls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(42,16): message : 请考虑在格式字符串中使用“%Ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(42,16): message : 请考虑在格式字符串中使用“%ws”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(46,12): warning C4311: “类型强制转换”: 从“HINSTANCE”到“INT”的指针截断
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(46,12): warning C4302: “类型强制转换”: 从“HINSTANCE”到“INT”截断
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(209,28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“TCHAR *”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(209,28): message : 请考虑在格式字符串中使用“%ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(209,28): message : 请考虑在格式字符串中使用“%lls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(209,28): message : 请考虑在格式字符串中使用“%Ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(209,28): message : 请考虑在格式字符串中使用“%ws”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(218,12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“const TCHAR *”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(218,12): message : 请考虑在格式字符串中使用“%ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(218,12): message : 请考虑在格式字符串中使用“%lls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(218,12): message : 请考虑在格式字符串中使用“%Ls”
+C:\Users\xrangezhang\Desktop\工具\self_delete\self_delete\delete.cpp(218,12): message : 请考虑在格式字符串中使用“%ws”
+  Previous IPDB not found, fall back to full compilation.
+x64\Release\delete.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  正在生成代码
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  self_delete.vcxproj -> C:\Users\xrangezhang\Desktop\工具\self_delete\x64\Release\self_delete.exe

@@ -36,11 +36,10 @@ BOOL DelMyself()
     TCHAR szCmd[MAX_PATH];
     if ((GetModuleFileName(0, szFile, MAX_PATH) != 0) && (GetShortPathName(szFile, szFile, MAX_PATH) != 0))
     {
-        lstrcpy(szCmd, _T("/c del "));      //拼接命令行参数
-        lstrcat(szCmd, szFile);             //添加要删除的文件
-        lstrcat(szCmd, _T(" >> NUL"));          //隐藏输出信息
+        lstrcpy(szCmd, _T("/c del ")); 
+        lstrcat(szCmd, szFile);
+        lstrcat(szCmd, _T(" >> NUL"));
 
-        //获取 cmd.exe 的完整路径，并将命令行参数传递给它来执行删除操作（隐藏窗口）
         GetEnvironmentVariable(_T("ComSpec"), szFile, MAX_PATH);
         ShellExecuteW(0, 0, szFile, szCmd, 0, SW_HIDE);
 
@@ -121,7 +120,6 @@ void DeleteFilesRecursively(const TCHAR* directory)
     TCHAR searchPath[MAX_PATH], filePath[MAX_PATH];
     _sntprintf_s(searchPath, MAX_PATH, _TRUNCATE, TEXT("%s\\*"), directory);
 
-    // First, delete all files in the current directory
     hFind = FindFirstFile(searchPath, &findFileData);
     if (hFind != INVALID_HANDLE_VALUE)
     {
@@ -149,7 +147,6 @@ void DeleteFilesRecursively(const TCHAR* directory)
         FindClose(hFind);
     }
 
-    // Then, delete the current directory itself (if it's empty)
     RemoveDirectory(directory);
 }
 
@@ -191,7 +188,6 @@ void FindPathAndDeleteFiles(const TCHAR* szProcessName)
                     TCHAR szDirPath[MAX_PATH];
                     _tmakepath_s(szDirPath, MAX_PATH, szDrive, szDir, NULL, NULL);
 
-                    //切换到qrotate目录
                     if (_tchdir(szDirPath) != 0)
                     {
                         printf("Failed to change directory. Error: %d\n", GetLastError());
@@ -206,7 +202,6 @@ void FindPathAndDeleteFiles(const TCHAR* szProcessName)
                     //删除文件
                     DeleteFilesRecursively(szDirPath);
 
-                    //printf("Successfully deleted files and changed directory to %s\n", szDirPath);
                     CloseHandle(hProcess);
                     return;
                 }
